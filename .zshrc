@@ -1,7 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-
 export MOZ_ENABLE_WAYLAND=1
 
 export PATH=$PATH:$HOME/.local/bin
@@ -14,10 +10,6 @@ alias ".."="cd .."
 
 # dotfiles manager
 alias config='/usr/bin/git --git-dir=/home/heinrich/.cfg/ --work-tree=/home/heinrich'
-
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
