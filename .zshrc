@@ -8,6 +8,9 @@ export LC_ALL=de_DE.UTF-8
 alias "ip"="ip -c"
 alias ".."="cd .."
 
+# to load the esp32 development framework
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
+
 # dotfiles manager
 alias config='/usr/bin/git --git-dir=/home/heinrich/.cfg/ --work-tree=/home/heinrich'
 
@@ -26,3 +29,4 @@ compinit
 # End of lines added by compinstall
 
 eval "$(starship init zsh)"
+source ~/.local/share/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

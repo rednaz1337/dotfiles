@@ -1,6 +1,6 @@
 
 format = """
-[┌─](bold green) $username@$hostname $directory
+[┌─](bold green) $time $username@$hostname $directory $package $rust
 [│](bold green)
 [└─>](bold green) """
 
